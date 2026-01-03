@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Spacecraft</title>
+</head>
+<body>
+    <div class="main-panel" id="mainPanel">
+        <div class="button-panel" id="buttonPanel" width="600" height="100">
+            <button class="start-button" id="startButton" onclick="startGame()">Start</button>
+            <button class="stop-button" id="stopButton" onclick="stopGame()">Stop</button>
+            <button class="resume-button" id="resumeButton" onclick="resumeGame()">Resume</button>
+            <textarea class="stage-label" id="stageLabel" readonly>Stage: 0</textarea>
+            <textarea class="live-label" id="liveLabel" readonly>Lives: 3</textarea>
+        </div>
+        <div class="canvas-container">
+        <canvas id="canvas" width="600" height="600" tabindex="0"></canvas>
+        </div>
+    </div>
+    <textarea id="log" class="log" readonly></textarea>
+
+    <div class="end-panel" id="endPanel">
+        <h1 class="end-title" id="endTitle">Game Over</h1>
+        <button class="restart-button" id="restartButton" onclick="restartGame()">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

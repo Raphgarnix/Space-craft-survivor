@@ -1,0 +1,177 @@
+
+
+/* ===== Reset & Base ===== */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Main Panel ===== */
+.main-panel {
+    margin-top: 20px;
+    background: rgba(20, 20, 30, 0.95);
+    border-radius: 14px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+    padding: 16px;
+    width: 640px;
+}
+
+/* ===== Button Panel ===== */
+.button-panel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s;
+}
+
+/* Start */
+.start-button {
+    background: linear-gradient(135deg, #1ed760, #16a34a);
+    color: #002b12;
+}
+.start-button:hover {
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.7);
+    transform: translateY(-1px);
+}
+
+/* Stop */
+.stop-button {
+    background: linear-gradient(135deg, #ff4d4d, #b91c1c);
+    color: #2a0000;
+}
+.stop-button:hover {
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.7);
+    transform: translateY(-1px);
+}
+
+/* Resume */
+.resume-button {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #00263d;
+}
+.resume-button:hover {
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.7);
+    transform: translateY(-1px);
+}
+
+/* ===== Stage Label ===== */
+.stage-label {
+    width: 110px;
+    height: 36px;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid #0ea5e9;
+    background: linear-gradient(180deg, #020617, #020617cc);
+    color: #38bdf8;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    box-shadow: inset 0 0 8px rgba(0, 180, 255, 0.4);
+}
+
+
+/* ===== Canvas Container ===== */
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* ===== Canvas ===== */
+canvas {
+    background: #000;
+    border-radius: 12px;
+    border: 2px solid #0ea5e9;
+    box-shadow: inset 0 0 25px rgba(0, 180, 255, 0.3),
+                0 0 25px rgba(0, 180, 255, 0.2);
+    outline: none;
+}
+
+/* ===== Log ===== */
+.log {
+    margin-top: 14px;
+    width: 640px;
+    height: 140px;
+    resize: none;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    background: #020617;
+    color: #94a3b8;
+    padding: 10px;
+    font-size: 12px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Live Label ===== */
+.live-label {
+    width: 110px;
+    height: 36px;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid #10b981;
+    background: linear-gradient(180deg, #020617, #020617cc);
+    color: #34d399;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    box-shadow: inset 0 0 8px rgba(16, 185, 129, 0.4);
+}
+
+/* ===== End Panel ===== */
+.end-panel {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(30, 30, 40, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+    padding: 160px 140px;
+    text-align: center;
+    display: none;
+}
+.end-title {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.restart-button {
+    background: linear-gradient(135deg, #ff4d4d, #b91c1c);
+    color: #2a0000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s;
+}
+
+.restart-button:hover {
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.7);
+    transform: translateY(-1px);
+}
