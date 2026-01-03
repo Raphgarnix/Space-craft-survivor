@@ -385,11 +385,26 @@ function restartGame() {
     updateLiveLabel();
     gamestarted = false;
     gamerunning = false;
-    ButtonStart.disabled = true;
     initializeCanvas();
 
 }
 
 function updateLiveLabel(){
     liveLabel.value = `Lives: ${player.hp}`;
+}
+
+function playerShootButton(){
+    if (gamerunning) {
+        playerShoot();
+    }
+}
+function playerMoveLeftButton(){
+    if (gamerunning) {
+        playerMoveLeft();
+    }   
+}
+function playerMoveRightButton(){
+    if (gamerunning) {
+        playerMoveRight();
+    }   
 }

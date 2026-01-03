@@ -20,7 +20,15 @@
         <canvas id="canvas" width="600" height="600" tabindex="0"></canvas>
         </div>
     </div>
-    <textarea id="log" class="log" readonly></textarea>
+    <div class="south-panel" id="southPanel">
+        <textarea id="log" class="log" readonly></textarea>
+        
+        <div class="movementButton-panel" id="movementButtonPanel">
+            <button class="shoot-button" id="shootButton" onclick="playerShootButton()">Shoot</button>
+            <button class="left-button" id="leftButton" onclick="playerMoveLeftButton()">Left</button>
+            <button class="right-button" id="rightButton" onclick="playerMoveRightButton()">Right</button>
+        </div>
+    </div>
 
     <div class="end-panel" id="endPanel">
         <h1 class="end-title" id="endTitle">Game Over</h1>
